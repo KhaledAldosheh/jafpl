@@ -22,5 +22,4 @@ class Problem000018Test {
 	void testSolve() throws NoSuchAlgorithmException {
 		assertEquals("708f3cf8100d5e71834b1db77dfa15d6", CheckGenerator.hexString((new Problem000018()).solve()));
 	}
-
 }
