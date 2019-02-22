@@ -20,11 +20,13 @@ public class ASCII {
 	public static void main(String[] args) {
 
 		try {
-			BufferedWriter out = new BufferedWriter(
-					new OutputStreamWriter(new FileOutputStream("ascii.html"), "UTF-8"));
-			out.write("<html><head><meta charset=\"UTF-8\"></head><body><table border=\"1\">");
-			for (int i = 0; i < 8; i++) {
+			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(
+					new FileOutputStream("ascii.html"), "UTF-8"));
+			out.write(
+					"<html><head><meta charset=\"UTF-8\"></head><body><table border=\"1\">");
+			for (int i = 0; i < 2048; i++) {
 				out.write("<tr>");
+				out.write("<td><b>" + i + "</b></td>");
 				for (int j = 0; j < 16; j++) {
 					out.write("<td>&#" + (i * 16 + j) + ";</td>");
 				}
